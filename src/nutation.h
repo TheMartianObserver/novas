@@ -13,6 +13,10 @@
 #ifndef _NUTATION_
    #define _NUTATION_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /*
    Function prototypes
 */
@@ -28,5 +32,9 @@
    void nu2000k (double jd_high, double jd_low,
 
                  double *dpsi, double *deps);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif

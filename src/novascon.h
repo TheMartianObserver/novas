@@ -13,6 +13,10 @@
 #ifndef _CONSTS_
    #define _CONSTS_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
    extern const short int FN1;
    extern const short int FN0;
 
@@ -114,5 +118,9 @@
    extern const double ASEC2RAD;
    extern const double DEG2RAD;
    extern const double RAD2DEG;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
