@@ -11,39 +11,17 @@
 */
 
 #ifndef _NOVAS_
-   #define _NOVAS_
+#define _NOVAS_
 
-   #ifndef __STDIO__
-      #include <stdio.h>
-   #endif
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
+#include <stdlib.h>
+#include <ctype.h>
 
-   #ifndef __MATH__
-      #include <math.h>
-   #endif
-
-   #ifndef __STRING__
-      #include <string.h>
-   #endif
-
-   #ifndef __STDLIB__
-      #include <stdlib.h>
-   #endif
-
-   #ifndef __CTYPE__
-      #include <ctype.h>
-   #endif
-
-   #ifndef _CONSTS_
-      #include "novascon.h"
-   #endif
-
-   #ifndef _SOLSYS_
-      #include "solarsystem.h"
-   #endif
-
-   #ifndef _NUTATION_
-      #include "nutation.h"
-   #endif
+#include "novascon.h"
+#include "solarsystem.h"
+#include "nutation.h"
 
 
 /*
