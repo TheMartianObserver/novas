@@ -13,6 +13,10 @@
 #ifndef _SOLSYS_
    #define _SOLSYS_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /*
    Function prototypes
 */
@@ -25,5 +29,8 @@
 
                              double *position, double *velocity);
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif

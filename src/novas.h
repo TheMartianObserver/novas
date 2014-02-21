@@ -23,6 +23,9 @@
 #include "solarsystem.h"
 #include "nutation.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /*
    Structures
@@ -524,6 +527,10 @@
    void make_in_space (double sc_pos[3], double sc_vel[3],
 
                        in_space *obs_space);
+
+#ifdef __cplusplus
+}
+#endif
 
 
 #endif
