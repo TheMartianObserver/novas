@@ -1,18 +1,12 @@
-project(NOVAS)
-cmake_minimum_required(VERSION 2.8)
-
-# Build using solsys1
+cmake_minimum_required(VERSION 3.6)
+project(novas)
 
 set(NOVAS_LIB_SRCS
-    src/eph_manager.c
     src/novas.c
     src/novascon.c
     src/nutation.c
-    src/readeph0.c
-    src/solsys1.c)
+    src/solsys3.c
+    src/readeph0.c)
 
 add_library(novas ${NOVAS_LIB_SRCS})
-
-add_executable(example src/example.c)
-target_link_libraries(example novas)
-
+target_include_directories(novas SYSTEM PUBLIC ${CMAKE_CURRENT_LIST_DIR}/src)
